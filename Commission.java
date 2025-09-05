@@ -1,14 +1,17 @@
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Commission {
 	public static void main(String[] args) {
+		Scanner object = new Scanner(System.in);
 		double sales;
 		double commRate;
 		int cRate;
 		double result;
 
 		DecimalFormat dc = new DecimalFormat("0.00");
-		sales = 15000.0;
+		System.out.print("Enter total sales: ");
+		sales = object.nextDouble();
 		commRate = 0.07;
 		cRate = 3;
 
@@ -20,6 +23,7 @@ public class Commission {
 
 		result = computeCommission(sales, cRate);
 		System.out.println("Result 3: " + result);
+		object.close();
 	}
 
 	public static double computeCommission(double sales, double rate) {
