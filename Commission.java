@@ -23,7 +23,9 @@ public class Commission {
 	}
 
 	public static double computeCommission(double sales, double rate) {
-
+		double cAmount;
+		cAmount = sales * rate;
+		return cAmount;
 	}
 
 	public static double computeCommission(double sales) {
