@@ -38,6 +38,10 @@ public class Commission {
 	}
 
 	public static double computeCommission(double sales, int cRate) {
+		double cAmount;
 
+		cAmount = (cRate / 100.0) * sales;
+
+		return cAmount;
 	}
 }
